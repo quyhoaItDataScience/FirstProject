@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css" />
+    <title>Quý Hòa's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="image">
+        <img
+          class="my-img"
+          src="images/me.png"
+          alt="Picture about me"
+          srcset=""
+        />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about"><i class="fas fa-user icon"></i>About</a>
+          </li>
+          <li>
+            <a href="#hobbies"><i class="fas fa-icons icon"></i>Sở thích</a>
+          </li>
+          <li>
+            <a href="#goals"><i class="fas fa-bullseye icon"></i>Mục tiêu</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-code icon"></i>Kỹ năng</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-phone icon"></i>Liên hệ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="introduction" id="about">
+        <div class="container-main">
+          <h1 class="title-introduction">Xin chào, mình là Quý Hòa</h1>
+          <p class="intro-descripton">
+            Là
+            <span
+              class="txt-type"
+              data-wait="1000"
+              data-words='["một lập trình viên trẻ", "simp chúa", "một người tham học hỏi"]'
+            ></span>
+          </p>
+          <p class="brief-intro">
+            Mình là sinh viên năm nhất trường Đại Học Khoa học Tự Nhiên, mình
+            đang tập tành viết web để tạo ra những trang web mang lại cảm giác
+            thú vị cho người dùng.
+          </p>
+          <button class="btn btn-main">Đọc tiếp</button>
+        </div>
+      </section>
+      <!-- Hobbies section -->
+      <section class="hobbies" id="hobbies">
+        <h2 class="heading-title">Sở thích</h2>
+        <div class="container-main">
+          <ul class="hobbies-list">
+            <li>Đọc sách 📚</li>
+            <li>Lập trình 👨🏻‍💻</li>
+            <li>Workout 💪🏻</li>
+            <li>
+              Màu sắc mình yêu thích nhất đó là
+              <span class="favorite-blue-text">màu xanh</span> vì nó mang sự
+              bình yên, nhẹ nhàng 💙
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Goals section -->
+      <section class="goals" id="goals">
+        <h2 class="heading-title">Mục tiêu</h2>
+        <div class="container-main bg-light">
+          <p class="goal-text">
+            Hiện tại thì trong năm nay, mình muốn thành thạo html, css,
+            javascript cơ bản để có thể viết web. Ngoài ra, mình cũng muốn lấn
+            sang về backend nên muốn học thêm về cấu trúc dữ liệu và thuật toán,
+            cách xử lý dữ liệu người dùng để làm ra những dự án thiết thực hơn.
+          </p>
+          <p class="goal-text">
+            Mình cũng muốn lập ra một cái blog riêng để chia sẽ những gì mình
+            học được về lập trình, cùng với đó là những chủ để ngoài việc lập
+            trình như cuộc sống, những cuốn sách hay bản thân đọc được.
+          </p>
+        </div>
+      </section>
+      <!-- Quiz app section -->
+      <section class="quiz-container">
+        <h2 class="heading-title">Let's Play Game</h2>
+        <div class="container quiz-container">
+          <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <p id="explain" class="hidden">Explaination</p>
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn-answer">Answer 1</button>
+              <button class="btn-answer">Answer 2</button>
+              <button class="btn-answer">Answer 3</button>
+              <button class="btn-answer">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+          </div>
+        </div>
+      </section>
+      <!-- Skills section -->
+      <section class="skills" id="skills">
+        <h2 class="heading-title">Kỹ năng</h2>
+        <div class="container-main bg-light">
+          <h2 class="skill"><i class="fab fa-html5 icon-html"></i> Html</h2>
+          <div class="progress-bar" style="--width: 70"></div>
+          <h2 class="skill"><i class="fab fa-css3-alt icon-css"></i> Css</h2>
+          <div class="progress-bar" style="--width: 20"></div>
+          <h2 class="skill">
+            <i class="fab fa-js-square icon-javascript"></i> Javascript
+          </h2>
+          <div class="progress-bar" style="--width: 30"></div>
+          <h2 class="skill">
+            <img class="icon-c" src="images/icons8-c++.svg" alt="" /> C++
+          </h2>
+          <div class="progress-bar" style="--width: 40"></div>
+        </div>
+        <!-- Projects section -->
+        <section class="projects">
+          <h2 class="heading-title">Dự Án Mình Đã Làm</h2>
+          <div class="card-container">
+            <div class="card">
+              <a href="projects/music.html" target="_blank"
+                ><img
+                  class="img-project"
+                  src="images/Yêu Từ Đâu Mà Ra.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="card">
+              <a href="Omnifood/omnifood.html" target="_blank"
+                ><img class="img-project" src="images/asset 7.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="grid">
+          <div class="social-links" id="contact">
+            <h2 class="info-title">Thông tin liên lạc</h2>
+            <div class="link-list">
+              <a
+                href="https://www.facebook.com/profile.php?id=100019002255780"
+                target="_blank"
+              >
+                <i class="fab fa-facebook social-icon"></i>Facebook</a
+              >
+              <a id="icon-email" href="mailto:quyhoaphantruong@gmail.com"
+                ><i
+                  class="fas fa-envelope-square social-icon"
+                  target="_blank"
+                ></i
+                >Email</a
+              >
+            </div>
+          </div>
+          <form class="form-control">
+            <div class="form-group">
+              <label for="comments">Comment ở đây nhé!</label>
+              <textarea placeholder="Comment" name="" id=""></textarea>
+            </div>
+            <button type="submit">Gửi</button>
+          </form>
+          <div class="copyright">
+            <h2 id="copyright">
+              &copy; Made with
+              <span style="color: red; font-size: 1.6rem">♥</span> by Quý Hòa
+            </h2>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <!-- Ion icon -->
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

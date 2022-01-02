@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap");
+/* 
+main-color: #e67e22
+background-color: #fdf2e9;
+color: #cf711f;
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #555;
+}
+a {
+  text-decoration: none;
+}
+/* Utilities Classes */
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-center-y {
+  align-items: center;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  margin-bottom: 3rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn-full:hover,
+.btn-full:active {
+  filter: brightness(90%);
+}
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.text-center {
+  text-align: center;
+}
+
+.tag {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
