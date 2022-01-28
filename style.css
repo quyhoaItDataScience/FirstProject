@@ -456,3 +456,8 @@ button[type="submit"]:hover {
     padding-left: 10%;
   }
 }
+@media only screen and (max-width: 400px) {
+  .brief-intro {
+    display: none;
+  }
+}
